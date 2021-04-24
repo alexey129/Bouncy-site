@@ -1,0 +1,108 @@
+.details-about-bouncy{
+	background-color: #F3F3F3;
+	padding-top: 60px;
+	box-sizing: border-box;
+
+	h1{
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: 20px;
+		font-family: "myriad pro regular";
+		color: #333B46;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.lab2{
+		width: 457px;
+		text-align: center;
+		font-size: 14px;
+		font-family: "open sans";
+		color: #333B46;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 45px;
+		@media (max-width: 768px){
+			width: 80%;
+		}
+	}
+
+	.buttons{
+		width: 215px;
+		height: 55px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 45px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		*{
+			background-color: #81868E;
+			width: 54px;
+			height: 54px;
+			border-radius: 54px;
+			background-repeat: no-repeat;
+			background-position-x: center;
+			background-position-y: center;
+		}
+
+		.button1{
+			background-color: #19BD9A;
+			background-image: url(../images/heart.png);
+		}
+
+		.button2{
+			background-image: url(../images/mouse.png);
+		}
+
+		.button3{
+			background-image: url(../images/lamp.png);
+		}
+	}
+
+	.swiper-container {
+		width: 80%;
+	}
+
+	.swiper-slide{
+
+		.content1{
+			margin-bottom: 20px;
+			color: #464646;
+			font-size: 20px;
+			font-family: "open sans";
+		}
+
+		.content2{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			grid-gap: 30px;
+
+			@media(max-width: 768px){
+				flex-direction: column;
+				justify-content: flex-start;
+				grid-gap: 15px;
+
+				& > *{
+					width: 100%;
+				}
+			}
+
+			.con1{
+				color: #81868E;
+				font-size: 20px;
+				font-family: "open sans";
+			}
+
+			.con2{
+				color: #81868E;
+				font-size: 14px;
+				font-family: "open sans";
+			}
+		}
+	}		
+}

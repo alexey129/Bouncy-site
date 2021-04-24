@@ -1,0 +1,57 @@
+.impressed {
+  background-image: url("../images/impressed-bg.jpg");
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+.impressed .lable {
+  display: inline-block;
+  width: 50%;
+  height: 131px;
+  margin-top: 82px;
+  margin-left: 99px;
+  color: white;
+}
+.impressed .lable .text1 {
+  margin-bottom: 59px;
+  font-size: 20px;
+  font-family: "myriad pro regular";
+}
+.impressed .lable .text2 {
+  margin-bottom: 34px;
+  font-size: 16px;
+  font-family: "open sans";
+}
+.impressed .lable .text3 {
+  font-size: 14px;
+  font-family: "open sans";
+  margin-bottom: 5px;
+}
+.impressed .lable .text4 {
+  font-size: 14px;
+  font-family: "open sans";
+}
+.impressed .lable .text4 span {
+  color: #19BD9A;
+}
+.impressed .monitor {
+  position: relative;
+  float: right;
+  top: -18px;
+  right: 98px;
+}
+.impressed .monitor p {
+  position: absolute;
+  color: white;
+  top: 112px;
+  left: 137px;
+  font-size: 30px;
+  font-family: "BIG JOHN";
+}
+.impressed .monitor p span {
+  color: #19BD9A;
+}
+@media (max-width: 1200px) {
+  .impressed .monitor {
+    display: none;
+  }
+}

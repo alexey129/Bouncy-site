@@ -1,0 +1,119 @@
+header{
+	@media(min-width: 769px){
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		z-index: 9999;
+		box-sizing: border-box;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 20px;
+		height: 60px;
+
+		.logo{
+			font-family: "BIG JOHN";
+			color: white;
+			font-size: 19px;
+			float: left;
+		}
+
+		.menu{
+			display: none;
+		}
+
+		ul{
+			display: flex;
+			flex-direction: row;
+			float: right;
+			grid-gap: 30px;
+			align-items: center;
+
+			li{
+				color:white;
+				font-family: "open sans";
+				font-size: 17px;
+				flex-basis: 100px;
+
+			} 
+		}
+	}
+	@media(max-width: 768px){
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		z-index: 9997;
+		box-sizing: border-box;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: 60px;
+		
+
+		.logo{
+			font-family: "BIG JOHN";
+			color: white;
+			font-size: 19px;
+			line-height: 36px;
+			float: left;
+		}
+
+		.menu{
+			display: block;
+			float: right;
+			background-image: url(../images/menu-icon2.png);
+			background-size: 100% 100%;
+			width: 40px;
+			height: 40px;
+			z-index: 9999;
+		}
+
+		.menuClose{
+			display: none;
+		}
+
+		.menuOpen{
+			display: flex;
+			flex-direction: column;
+			position: fixed;
+			width: 100%;
+			top: 60px;
+			left: 0px;
+			z-index: 9998;
+			box-sizing: border-box;
+			padding-top: 20px;
+			background-color: white;
+			height: 50vh;
+
+			li{
+				height: 40px;
+				width: 100%;
+				line-height: 40px;
+				font-size: 30px;
+				text-align: center;
+				font-family: "open sans";
+				color: #efefef;
+
+				&:nth-child(odd){
+					background-color: #29CDAA;
+				}
+
+				&:nth-child(even){
+					background-color: #0BAF8C;
+				}
+			}
+		}
+	}
+}
+
+.headerOpen{
+	background-color: white !important;
+
+	.logo{
+		color: black;
+	}
+}
+
+.headerClose{
+	background-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,124 @@
+.contact-us {
+  background-color: #F3F3F3;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+.contact-us .lab1 {
+  color: #333B46;
+  font-family: "open sans";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 41px;
+}
+.contact-us .lab2 {
+  color: #81868E;
+  font-family: "open sans";
+  font-size: 14px;
+  width: 457px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .contact-us .lab2 {
+    width: 80%;
+  }
+}
+.contact-us .content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact-us .content > * {
+  flex: 1 0 25%;
+  min-width: 288px;
+  max-width: 289px;
+  margin-bottom: 10px;
+}
+.contact-us .content .div1 {
+  height: 272px;
+  width: 288px;
+}
+.contact-us .content .div1 .div11 {
+  height: 50%;
+  background-image: url(../images/contus1.jpg);
+}
+.contact-us .content .div1 .div12 {
+  height: 50%;
+  padding-top: 1px;
+  background-color: white;
+}
+.contact-us .content .div1 .div12 .text1 {
+  margin-bottom: 25px;
+  font-family: "open sans";
+  font-size: 20px;
+  color: #464646;
+  margin-top: 30px;
+  text-align: center;
+}
+.contact-us .content .div1 .div12 .text2 {
+  color: #81868E;
+  font-size: 16px;
+  font-family: "open sans";
+  text-align: center;
+}
+.contact-us .content .div2 {
+  height: 273px;
+  width: 288px;
+}
+.contact-us .content .div2 .div21 {
+  height: 50%;
+  background-image: url(../images/contus2.jpg);
+}
+.contact-us .content .div2 .div22 {
+  height: 50%;
+  padding-top: 1px;
+  background-color: white;
+}
+.contact-us .content .div2 .div22 .text1 {
+  margin-bottom: 25px;
+  font-family: "open sans";
+  font-size: 20px;
+  color: #464646;
+  margin-top: 30px;
+  text-align: center;
+}
+.contact-us .content .div2 .div22 .text2 {
+  color: #81868E;
+  font-size: 16px;
+  font-family: "open sans";
+  text-align: center;
+}
+.contact-us .content .div3 {
+  height: 273px;
+  width: 288px;
+}
+.contact-us .content .div3 .div31 {
+  height: 50%;
+  background-image: url(../images/contus3.jpg);
+}
+.contact-us .content .div3 .div32 {
+  height: 50%;
+  padding-top: 1px;
+  background-color: white;
+}
+.contact-us .content .div3 .div32 .text1 {
+  margin-bottom: 25px;
+  font-family: "open sans";
+  font-size: 20px;
+  color: #464646;
+  margin-top: 30px;
+  text-align: center;
+}
+.contact-us .content .div3 .div32 .text2 {
+  color: #81868E;
+  font-size: 16px;
+  font-family: "open sans";
+  text-align: center;
+}

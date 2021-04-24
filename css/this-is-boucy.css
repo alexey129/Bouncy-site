@@ -1,0 +1,47 @@
+.this-is-boucy {
+  height: 450px;
+  background-color: white;
+  padding-top: 61px;
+}
+.this-is-boucy .content {
+  width: 90%;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.this-is-boucy .content section {
+  width: 466px;
+  padding-top: 26px;
+}
+.this-is-boucy .content section h1 {
+  font-size: 20px;
+  font-family: "myriad pro regular";
+  color: #333B46;
+  margin-bottom: 37px;
+}
+.this-is-boucy .content section p {
+  width: 90%;
+  font-size: 14px;
+  font-family: "open sans";
+  line-height: 2;
+  color: #333B46;
+  margin-bottom: 46px;
+}
+.this-is-boucy .content section .button {
+  width: 141px;
+  height: 38px;
+  border: solid 1px black;
+  border-radius: 38px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 16px;
+  font-family: "open sans";
+  color: #333B46;
+}
+@media (max-width: 760px) {
+  .this-is-boucy .content img {
+    display: none;
+  }
+}
