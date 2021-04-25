@@ -1,6 +1,14 @@
 {
+<<<<<<< HEAD
 		"root": "src/",
 		"routes": {
 		"/**": "index.html"
 		}
     }
+=======
+        "root": "src/",
+        "routes": {
+        "/**": "index.html"
+        }
+    }
+>>>>>>> 9ea95d4958c6c4b0c550c303ffa587c9c9448ea0
