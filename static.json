@@ -1,6 +1,6 @@
 {
-        "root": "/",
-        "routes": {
-        "/**": "index.html"
-        }
+		"root": "src/",
+		"routes": {
+		"/**": "index.html"
+		}
     }
