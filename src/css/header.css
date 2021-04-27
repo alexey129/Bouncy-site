@@ -11,10 +11,25 @@
     height: 60px;
   }
   header .logo {
+    display: block;
     font-family: "BIG JOHN";
     color: white;
     font-size: 19px;
     float: left;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  header .logo:hover {
+    font-size: 21px;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+  }
+  header .logo:focus-visible {
+    background-color: #B3DAE0;
+    transition-duration: 0s;
   }
   header .menu {
     display: none;
@@ -25,12 +40,33 @@
     float: right;
     align-items: center;
   }
-  header ul li {
+  header ul a {
+    display: block;
     color: white;
     font-family: "open sans";
     font-size: 17px;
     flex-basis: 100px;
     margin-right: 40px;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  header ul a:hover {
+    background-color: #140F23;
+    color: white;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+  }
+  header ul a:focus-visible {
+    background-color: #B3DAE0;
+    transition-duration: 0s;
+  }
+  header ul a:active {
+    background-color: #443F63;
+    transition-property: background-color;
+    transition-duration: 0s;
   }
 }
 @media (max-width: 768px) {

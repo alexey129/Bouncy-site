@@ -1,5 +1,5 @@
 
-#hello{
+.hello{
 	background: white url(../images/hello-background.png);
 	width: 100%;
 	height: 100vh;
@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	
 
-	h1{
+	&__tittle{
 		text-align: center;
 		font-size: 35px;
 		font-family: "myriad pro regular";
@@ -15,18 +15,20 @@
 		margin-bottom: 50px;
 	}
 
-	p{
+	&__text{
 		width: 604px;
 		text-align: center;
-		font-size: 16px;
-		font-family: "open sans";
-		color: white;
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 20vh;
+
+		@media (max-width: 768px){
+			width: 80%;
+		}
 	}
 
-	.pick{
+	&__pick{
+		display: block;
 		width: 37px;
 		height: 37px;
 		margin-right: auto;
@@ -37,21 +39,28 @@
 		background-repeat: no-repeat;
 		background-position-x: center;
 		background-position-y: center;
-	}
+		text-decoration: none;
 
-	@media (min-width: 550px) and (max-width: 759px){
+		&:hover{
+			width: 45px;
+			height: 45px;
+			transition-property: width, height;
+			transition-duration: 0.5s;
+		}
 
-		p{
-			width: 80%;
+		&:focus-visible{
+			background-color: #B3DAE0;
+			transition-duration: 0s;
+		}
+
+		&:active{
+			background-color: #099D7A;
+			transition-property: background-color;
+			transition-duration: 0s;
 		}
 	}
 
 	@media (max-width: 550px){
-
 		padding-top: 150px;
-
-		p{
-			width: 80%;
-		}
 	}
 }

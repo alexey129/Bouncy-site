@@ -63,3 +63,11 @@
   border: solid 1px #19BD9A;
   color: white;
 }
+.subscribe-us form input[type=submit]:hover {
+  background-color: #099D7A;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.subscribe-us form input[type=submit]:focus-visible {
+  background-color: #B3DAE0;
+}

@@ -1,28 +1,31 @@
-#hello {
+.hello {
   background: white url(../images/hello-background.png);
   width: 100%;
   height: 100vh;
   padding-top: 100px;
   box-sizing: border-box;
 }
-#hello h1 {
+.hello__tittle {
   text-align: center;
   font-size: 35px;
   font-family: "myriad pro regular";
   color: white;
   margin-bottom: 50px;
 }
-#hello p {
+.hello__text {
   width: 604px;
   text-align: center;
-  font-size: 16px;
-  font-family: "open sans";
-  color: white;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20vh;
 }
-#hello .pick {
+@media (max-width: 768px) {
+  .hello__text {
+    width: 80%;
+  }
+}
+.hello__pick {
+  display: block;
   width: 37px;
   height: 37px;
   margin-right: auto;
@@ -33,17 +36,25 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+  text-decoration: none;
 }
-@media (min-width: 550px) and (max-width: 759px) {
-  #hello p {
-    width: 80%;
-  }
+.hello__pick:hover {
+  width: 45px;
+  height: 45px;
+  transition-property: width, height;
+  transition-duration: 0.5s;
+}
+.hello__pick:focus-visible {
+  background-color: #B3DAE0;
+  transition-duration: 0s;
+}
+.hello__pick:active {
+  background-color: #099D7A;
+  transition-property: background-color;
+  transition-duration: 0s;
 }
 @media (max-width: 550px) {
-  #hello {
+  .hello {
     padding-top: 150px;
-  }
-  #hello p {
-    width: 80%;
   }
 }

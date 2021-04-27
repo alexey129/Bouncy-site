@@ -9,6 +9,8 @@ function HeadMenuf() {
 let headMenu = document.querySelector("header > .menu");
 headMenu.onclick = HeadMenuf;
 
+
+
 //меняет цвет у header
 //код нужен полностью весь
 var element = document.querySelector("header");
@@ -22,13 +24,13 @@ if (window.pageYOffset >= 30) {
 
 window.addEventListener("scroll", function() {
     var element = document.querySelector("header");
-    var element2 = document.querySelectorAll("header > div");
+    //var element2 = document.querySelectorAll("header > div");
     if (window.pageYOffset >= 30) {
         element.style.backgroundColor = "#D3D3D3";
     } else {
         element.style.backgroundColor = "";
     }
-})
+});
 
 //карусель our-services
 
@@ -56,33 +58,33 @@ var buttonOurServices3 = document.querySelector(".our-services .slider .buttons 
 var buttonOurServices4 = document.querySelector(".our-services .slider .buttons .button4");
 
 buttonOurServices1.onclick = function(event) {
-    swiperOurServices.slideTo(1, 500)
+    swiperOurServices.slideTo(1, 500);
     buttonOurServices1.style.backgroundColor = "#19BD9A";
     buttonOurServices2.style.backgroundColor = "#81868E";
     buttonOurServices3.style.backgroundColor = "#81868E";
     buttonOurServices4.style.backgroundColor = "#81868E";
-}
+};
 buttonOurServices2.onclick = function(event) {
-    swiperOurServices.slideTo(2, 500)
+    swiperOurServices.slideTo(2, 500);
     buttonOurServices1.style.backgroundColor = "#81868E";
     buttonOurServices2.style.backgroundColor = "#19BD9A";
     buttonOurServices3.style.backgroundColor = "#81868E";
     buttonOurServices4.style.backgroundColor = "#81868E";
-}
+};
 buttonOurServices3.onclick = function(event) {
-    swiperOurServices.slideTo(3, 500)
+    swiperOurServices.slideTo(3, 500);
     buttonOurServices1.style.backgroundColor = "#81868E";
     buttonOurServices2.style.backgroundColor = "#81868E";
     buttonOurServices3.style.backgroundColor = "#19BD9A";
     buttonOurServices4.style.backgroundColor = "#81868E";
-}
+};
 buttonOurServices4.onclick = function(event) {
-        swiperOurServices.slideTo(4, 500)
+        swiperOurServices.slideTo(4, 500);
         buttonOurServices1.style.backgroundColor = "#81868E";
         buttonOurServices2.style.backgroundColor = "#81868E";
         buttonOurServices3.style.backgroundColor = "#81868E";
         buttonOurServices4.style.backgroundColor = "#19BD9A";
-    }
+    };
     //--------------------------------------------------------
     //карусель details-about-bouncy
 let swiperDetAbBoun = new Swiper('.details-about-bouncy .swiper-container', {
@@ -103,28 +105,28 @@ let swiperDetAbBoun = new Swiper('.details-about-bouncy .swiper-container', {
     },
 });
 
-var buttonDetAbBoun1 = document.querySelector(".details-about-bouncy .buttons .button1");
-var buttonDetAbBoun2 = document.querySelector(".details-about-bouncy .buttons .button2");
-var buttonDetAbBoun3 = document.querySelector(".details-about-bouncy .buttons .button3");
+var buttonDetAbBoun1 = document.querySelector(".details-about-bouncy .details-about-bouncy__buttons .button1");
+var buttonDetAbBoun2 = document.querySelector(".details-about-bouncy .details-about-bouncy__buttons .button2");
+var buttonDetAbBoun3 = document.querySelector(".details-about-bouncy .details-about-bouncy__buttons .button3");
 
 buttonDetAbBoun1.onclick = function(event) {
-    swiperDetAbBoun.slideTo(1, 500)
+    swiperDetAbBoun.slideTo(1, 500);
     buttonDetAbBoun1.style.backgroundColor = "#19BD9A";
     buttonDetAbBoun2.style.backgroundColor = "#81868E";
     buttonDetAbBoun3.style.backgroundColor = "#81868E";
-}
+};
 buttonDetAbBoun2.onclick = function(event) {
-    swiperDetAbBoun.slideTo(2, 500)
+    swiperDetAbBoun.slideTo(2, 500);
     buttonDetAbBoun1.style.backgroundColor = "#81868E";
     buttonDetAbBoun2.style.backgroundColor = "#19BD9A";
     buttonDetAbBoun3.style.backgroundColor = "#81868E";
-}
+};
 buttonDetAbBoun3.onclick = function(event) {
-    swiperDetAbBoun.slideTo(3, 500)
+    swiperDetAbBoun.slideTo(3, 500);
     buttonDetAbBoun1.style.backgroundColor = "#81868E";
     buttonDetAbBoun2.style.backgroundColor = "#81868E";
     buttonDetAbBoun3.style.backgroundColor = "#19BD9A";
-}
+};
 
 //---------------------------------------------------------------
 //the-portfolio
@@ -137,7 +139,7 @@ imagesLoaded(container, function() {
         itemSelector: '.the-portfolio .grid .grid-item',
         columnWidth: 300,
         isFitWidth: true,
-    })
+    });
 });
 
 //---------------------------------------------------------------
@@ -160,23 +162,23 @@ var buttonTheTeam2 = document.querySelector(".the-team .buttons .button2");
 var buttonTheTeam3 = document.querySelector(".the-team .buttons .button3");
 
 buttonTheTeam1.onclick = function(event) {
-    swiperTheTeam.slideTo(1, 500)
+    swiperTheTeam.slideTo(1, 500);
     buttonTheTeam1.style.backgroundColor = "#19BD9A";
     buttonTheTeam2.style.backgroundColor = "#81868E";
     buttonTheTeam3.style.backgroundColor = "#81868E";
-}
+};
 buttonTheTeam2.onclick = function(event) {
-    swiperTheTeam.slideTo(2, 500)
+    swiperTheTeam.slideTo(2, 500);
     buttonTheTeam1.style.backgroundColor = "#81868E";
     buttonTheTeam2.style.backgroundColor = "#19BD9A";
     buttonTheTeam3.style.backgroundColor = "#81868E";
-}
+};
 buttonTheTeam3.onclick = function(event) {
-    swiperTheTeam.slideTo(3, 500)
+    swiperTheTeam.slideTo(3, 500);
     buttonTheTeam1.style.backgroundColor = "#81868E";
     buttonTheTeam2.style.backgroundColor = "#81868E";
     buttonTheTeam3.style.backgroundColor = "#19BD9A";
-}
+};
 
 //карусель testimonials
 
@@ -200,23 +202,23 @@ var buttonTestimonials2 = document.querySelector(".testimonials .comments .butto
 var buttonTestimonials3 = document.querySelector(".testimonials .comments .buttons .button3");
 
 buttonTestimonials1.onclick = function(event) {
-    swiperTestimonials.slideTo(1, 500)
+    swiperTestimonials.slideTo(1, 500);
     buttonTestimonials1.style.backgroundColor = "#19BD9A";
     buttonTestimonials2.style.backgroundColor = "#81868E";
     buttonTestimonials3.style.backgroundColor = "#81868E";
-}
+};
 buttonTestimonials2.onclick = function(event) {
-    swiperTestimonials.slideTo(2, 500)
+    swiperTestimonials.slideTo(2, 500);
     buttonTestimonials1.style.backgroundColor = "#81868E";
     buttonTestimonials2.style.backgroundColor = "#19BD9A";
     buttonTestimonials3.style.backgroundColor = "#81868E";
-}
+};
 buttonTestimonials3.onclick = function(event) {
-    swiperTestimonials.slideTo(3, 500)
+    swiperTestimonials.slideTo(3, 500);
     buttonTestimonials1.style.backgroundColor = "#81868E";
     buttonTestimonials2.style.backgroundColor = "#81868E";
     buttonTestimonials3.style.backgroundColor = "#19BD9A";
-}
+};
 
 
 //карусель latest-news
@@ -241,23 +243,23 @@ var buttonLatestNews2 = document.querySelector(".latest-news .buttons .button2")
 var buttonLatestNews3 = document.querySelector(".latest-news .buttons .button3");
 
 buttonLatestNews1.onclick = function(event) {
-    swiperLatestNews.slideTo(1, 500)
+    swiperLatestNews.slideTo(1, 500);
     buttonLatestNews1.style.backgroundColor = "#B2B3B3";
     buttonLatestNews2.style.backgroundColor = "rgba(0, 0, 0, 0)";
     buttonLatestNews3.style.backgroundColor = "rgba(0, 0, 0, 0)";
-}
+};
 buttonLatestNews2.onclick = function(event) {
-    swiperLatestNews.slideTo(2, 500)
+    swiperLatestNews.slideTo(2, 500);
     buttonLatestNews1.style.backgroundColor = "rgba(0, 0, 0, 0)";
     buttonLatestNews2.style.backgroundColor = "#B2B3B3";
     buttonLatestNews3.style.backgroundColor = "rgba(0, 0, 0, 0)";
-}
+};
 buttonLatestNews3.onclick = function(event) {
-    swiperLatestNews.slideTo(3, 500)
+    swiperLatestNews.slideTo(3, 500);
     buttonLatestNews1.style.backgroundColor = "rgba(0, 0, 0, 0)";
     buttonLatestNews2.style.backgroundColor = "rgba(0, 0, 0, 0)";
     buttonLatestNews3.style.backgroundColor = "#B2B3B3";
-}
+};
 
 //find-us-on-the-map
 let buttonMap = document.querySelector(".find-us-on-the-map > .start_back > .enter");
@@ -267,4 +269,4 @@ let mapMap = document.querySelector(".find-us-on-the-map > .map");
 buttonMap.onclick = function(event) {
     enterMap.style.display = "none";
     mapMap.style.display = "block";
-}
+};

@@ -28,6 +28,12 @@
   background-position-x: center;
   background-position-y: center;
 }
+.find-us-on-the-map .start_back .enter .button:hover {
+  width: 24px;
+  height: 24px;
+  transition-property: width, height;
+  transition-duration: 0.5s;
+}
 .find-us-on-the-map .map {
   height: 429px;
   display: none;

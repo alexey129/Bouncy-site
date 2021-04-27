@@ -3,42 +3,28 @@
   padding-top: 60px;
   box-sizing: border-box;
 }
-.details-about-bouncy h1 {
+.details-about-bouncy__tittle {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 20px;
-  font-family: "myriad pro regular";
-  color: #333B46;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto 30px auto;
 }
-.details-about-bouncy .lab2 {
+.details-about-bouncy__text {
   width: 457px;
   text-align: center;
-  font-size: 14px;
-  font-family: "open sans";
-  color: #333B46;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 45px;
+  margin: 0 auto 45px auto;
 }
 @media (max-width: 768px) {
-  .details-about-bouncy .lab2 {
+  .details-about-bouncy__text {
     width: 80%;
   }
 }
-.details-about-bouncy .buttons {
+.details-about-bouncy__buttons {
   width: 215px;
-  height: 55px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 45px;
+  margin: 0 auto 45px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
-.details-about-bouncy .buttons * {
+.details-about-bouncy__buttons * {
   background-color: #81868E;
   width: 54px;
   height: 54px;
@@ -47,14 +33,14 @@
   background-position-x: center;
   background-position-y: center;
 }
-.details-about-bouncy .buttons .button1 {
+.details-about-bouncy__buttons .button1 {
   background-color: #19BD9A;
   background-image: url(../images/heart.png);
 }
-.details-about-bouncy .buttons .button2 {
+.details-about-bouncy__buttons .button2 {
   background-image: url(../images/mouse.png);
 }
-.details-about-bouncy .buttons .button3 {
+.details-about-bouncy__buttons .button3 {
   background-image: url(../images/lamp.png);
 }
 .details-about-bouncy .swiper-container {

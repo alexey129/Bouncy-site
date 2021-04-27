@@ -86,6 +86,7 @@
 		}
 
 		.button{
+			display: block;
 			width: 141px;
 			height: 38px;
 			border: solid 1px white;
@@ -97,6 +98,25 @@
 			font-size: 16px;
 			font-family: "open sans";
 			color: white;
+			text-decoration: none;
+
+			&:hover{
+                    background-color: white;
+                    color: #81868E;
+                    transition-property: background-color, color;
+                    transition-duration: 0.5s;
+               }
+
+               &:focus-visible{
+                    background-color: #B3DAE0;
+                    transition-duration: 0s;
+               }
+
+               &:active{
+                    padding: 5px;
+                    transition-property: padding;
+                    transition-duration: 0.5s;
+               }
 		}
 	}
 }

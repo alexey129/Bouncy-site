@@ -74,6 +74,7 @@
   font-family: "open sans";
 }
 .featured-project footer .button {
+  display: block;
   width: 141px;
   height: 38px;
   border: solid white 1px;
@@ -84,6 +85,22 @@
   font-size: 16px;
   font-family: "open sans";
   margin-right: 50px;
+  text-decoration: none;
+}
+.featured-project footer .button:hover {
+  background-color: white;
+  color: #81868E;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+.featured-project footer .button:focus-visible {
+  background-color: #B3DAE0;
+  transition-duration: 0s;
+}
+.featured-project footer .button:active {
+  padding: 5px;
+  transition-property: padding;
+  transition-duration: 0.5s;
 }
 @media (max-width: 800px) {
   .featured-project {
