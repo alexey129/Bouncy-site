@@ -2,14 +2,14 @@
   padding-top: 40px;
   box-sizing: border-box;
 }
-.featured-project h1 {
+.featured-project h2 {
   text-align: center;
   font-size: 20px;
   font-family: "myriad pro regular";
   color: #333B46;
   margin-bottom: 15px;
 }
-.featured-project p {
+.featured-project__text {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -20,38 +20,28 @@
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
-  .featured-project p {
+  .featured-project__text {
     width: 80%;
   }
 }
 .featured-project .images {
   height: 318px;
   max-width: 100%;
+  display: flex;
 }
-.featured-project .images table {
-  width: 100%;
-  height: 320px;
-}
-.featured-project .images table tbody tr .img1 {
+.featured-project .images .image1 {
   background-image: url(../images/vint1.jpg);
   width: 50%;
 }
-.featured-project .images table tbody tr .img2 {
+.featured-project .images .image2 {
   background-image: url(../images/vint2.png);
   width: 25%;
 }
-.featured-project .images table tbody tr .img2 .text {
-  color: white;
-  text-align: center;
-  line-height: 320px;
-  font-size: 20px;
-  font-family: "open sans";
-}
-.featured-project .images table tbody tr .img3 {
+.featured-project .images .image3 {
   background-image: url(../images/vint3.png);
   width: 25%;
 }
-.featured-project .images table tbody tr .img3 .text {
+.featured-project .images > * > .text {
   color: white;
   text-align: center;
   line-height: 320px;
@@ -66,7 +56,7 @@
   justify-content: space-around;
   align-items: center;
 }
-.featured-project footer p {
+.featured-project footer div {
   width: 50%;
   height: auto;
   color: white;

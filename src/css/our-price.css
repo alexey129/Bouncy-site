@@ -57,7 +57,7 @@
   font-size: 30px;
   font-family: "BIG JOHN";
 }
-.our-price .up-grid .grid .premium .content p {
+.our-price .up-grid .grid .premium .content div {
   position: relative;
   top: 67px;
 }
@@ -74,7 +74,7 @@
   height: 235px;
   background-color: white;
 }
-.our-price .up-grid .grid .start .content p {
+.our-price .up-grid .grid .start .content div {
   position: relative;
   top: 36px;
   left: 34px;
@@ -105,7 +105,7 @@
   font-size: 30px;
   font-family: "BIG JOHN";
 }
-.our-price .up-grid .grid .exclusive .content p {
+.our-price .up-grid .grid .exclusive .content div {
   position: relative;
   top: 67px;
 }

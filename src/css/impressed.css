@@ -39,7 +39,7 @@
   top: -18px;
   right: 98px;
 }
-.impressed .monitor p {
+.impressed .monitor div {
   position: absolute;
   color: white;
   top: 112px;
@@ -47,7 +47,7 @@
   font-size: 30px;
   font-family: "BIG JOHN";
 }
-.impressed .monitor p span {
+.impressed .monitor div span {
   color: #19BD9A;
 }
 @media (max-width: 1200px) {

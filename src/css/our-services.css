@@ -61,7 +61,7 @@
 .our-services .slider .buttons .button4 {
   background-image: url(../images/electric.png);
 }
-.our-services .slider .swiper-container .swiper-wrapper * h1 {
+.our-services .slider .swiper-container .swiper-wrapper * h3 {
   margin-bottom: 33px;
   font-size: 20px;
   font-family: "myriad pro regular";
@@ -123,7 +123,7 @@
   height: 122px;
   margin-bottom: 20px;
 }
-.our-services .slider .swiper-container .swiper-wrapper .slide1 .circles * p {
+.our-services .slider .swiper-container .swiper-wrapper .slide1 .circles * div {
   color: #81868E;
   font-family: "myriad pro regular";
   font-size: 16px;
