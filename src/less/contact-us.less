@@ -1,141 +1,157 @@
 .contact-us{
-     background-color: #F3F3F3;
-     padding-top: 80px;
-     padding-bottom: 50px;
-     box-sizing: border-box;
+	background-color: #F3F3F3;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	box-sizing: border-box;
 
-     .lab1{
-          color: #333B46;
-          font-family: "open sans";
-          font-size: 20px;
-          text-align: center;
-          margin-bottom: 41px;
-     }
+	.tittle{
+		color: #333B46;
+		font-family: "open sans";
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 41px;
+	}
 
-     .lab2{
-          color: #81868E;
-          font-family: "open sans";
-          font-size: 14px;
-          width: 457px;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          margin-bottom: 60px;
-          @media (max-width: 768px){
-               width: 80%;
-          }
-     }
+	.text{
+		color: #81868E;
+		font-family: "open sans";
+		font-size: 14px;
+		width: 457px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-bottom: 60px;
+		@media (max-width: 768px){
+			width: 80%;
+		}
+	}
 
-     .content{
-          width: 90%;
-          display: flex;
-          justify-content: space-between;
-          margin-left: auto;
-          margin-right: auto;
-          flex-direction: row;
-          flex-wrap: wrap;
-          & > *{
-                    flex: 1 0 25%;
-                    min-width: 288px;
-                    max-width: 289px;
-                    margin-bottom: 10px;
-               }
+	.content{
+		display: grid;
 
-          .div1{
-               height: 272px;
-               width: 288px;
-               
+		@media(min-width: 1025px){
+			grid-template-columns: 1fr 1fr 1fr;
+		}
 
-               .div11{
-                    height: 50%;
-                    background-image: url(../images/contus1.jpg);
-               }
+		@media(min-width: 769px)and(max-width: 1024px){
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			grid-template-areas:
+				"a1 a2"
+				"a3 a3";
 
-               .div12{
-                    height: 50%;
-                    padding-top: 1px;
-                    background-color: white;
+			.e-mail{
+				grid-area: a1;
+			}
 
-                    .text1{
-                         margin-bottom: 25px;
-                         font-family: "open sans";
-                         font-size: 20px;
-                         color: #464646;
-                         margin-top:30px;
-                         text-align: center;
-                    }
+			.our-office{
+				grid-area: a2;
+			}
 
-                    .text2{
-                         color: #81868E;
-                         font-size: 16px;
-                         font-family: "open sans";
-                         text-align: center;
-                    }
-               }
-          }
+			.phone{
+				grid-area: a3;
+			}
+		}
 
-          .div2{
-               height: 273px;
-               width: 288px;
-          
-               .div21{
-                    height: 50%;
-                    background-image: url(../images/contus2.jpg);
-               }
+		@media(max-width: 768px){
+			grid-template-rows: 1fr 1fr 1fr;
+		}
 
-               .div22{
-                    height: 50%;
-                    padding-top: 1px;
-                    background-color: white;
+		& > *{
+			height: 270px;
+			padding: 10px;
+			box-sizing: border-box;
+		}
 
-                    .text1{
-                         margin-bottom: 25px;
-                         font-family: "open sans";
-                         font-size: 20px;
-                         color: #464646;
-                         margin-top:30px;
-                         text-align: center;
-                    }
+		.e-mail{
+			.image{
+				height: 50%;
+				background-image: url(../images/contus1.jpg);
+				background-size: cover;
+			}
 
-                    .text2{
-                         color: #81868E;
-                         font-size: 16px;
-                         font-family: "open sans";
-                         text-align: center;
-                    }
-               }
-          }
+			.div12{
+				height: 50%;
+				padding-top: 30px;
+				background-color: white;
+				box-sizing: border-box;
 
-          .div3{
-               height: 273px;
-               width: 288px;
-          
-               .div31{
-                    height: 50%;
-                    background-image: url(../images/contus3.jpg);
-               }
+				.text1{
+					margin-bottom: 25px;
+					font-family: "open sans";
+					font-size: 20px;
+					color: #464646;
+					text-align: center;
+				}
 
-               .div32{
-                    height: 50%;
-                    padding-top: 1px;
-                    background-color: white;
+				.text2{
+					color: #81868E;
+					font-size: 16px;
+					font-family: "open sans";
+					text-align: center;
+				}
+			}
+		}
 
-                    .text1{
-                         margin-bottom: 25px;
-                         font-family: "open sans";
-                         font-size: 20px;
-                         color: #464646;
-                         margin-top:30px;
-                         text-align: center;
-                    }
+		.our-office{
+			.image{
+				height: 50%;
+				background-image: url(../images/contus2.jpg);
+				background-size: cover;
+			}
 
-                    .text2{
-                         color: #81868E;
-                         font-size: 16px;
-                         font-family: "open sans";
-                         text-align: center;
-                    }
-               }
-          }
-     }
+			.div22{
+				height: 50%;
+				padding-top: 30px;
+				background-color: white;
+				box-sizing: border-box;
+
+				.text1{
+					margin-bottom: 25px;
+					font-family: "open sans";
+					font-size: 20px;
+					color: #464646;
+					text-align: center;
+				}
+
+				.text2{
+					color: #81868E;
+					font-size: 16px;
+					font-family: "open sans";
+					text-align: center;
+				}
+			}
+		}
+
+		.phone{
+			.image{
+				height: 50%;
+				background-image: url(../images/contus3.jpg);
+				background-size: cover;
+			}
+
+			.div32{
+				height: 50%;
+				padding-top: 30px;
+				background-color: white;
+				box-sizing: border-box;
+
+				.text1{
+					margin-bottom: 25px;
+					font-family: "open sans";
+					font-size: 20px;
+					color: #464646;
+					text-align: center;
+				}
+
+				.text2{
+					color: #81868E;
+					font-size: 16px;
+					font-family: "open sans";
+					text-align: center;
+				}
+			}
+		}
+	}
+
 }

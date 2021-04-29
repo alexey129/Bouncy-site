@@ -1,6 +1,7 @@
 .impressed{
      //height: 392px;
      background-image: url("../images/impressed-bg.jpg");
+     background-size: cover;
      padding-bottom: 50px;
      box-sizing: border-box;
 
@@ -12,6 +13,11 @@
           margin-left: 99px;
           color: white;
 
+          @media(max-width: 768px){
+               width: 90%;
+               margin-left: 5%;
+          }
+
           .text1{
                margin-bottom: 59px;
                font-size: 20px;
@@ -22,6 +28,7 @@
                margin-bottom: 34px;
                font-size: 16px;
                font-family: "open sans";
+               text-align: justify;
           }
 
           .text3{

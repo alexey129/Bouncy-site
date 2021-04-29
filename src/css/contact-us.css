@@ -4,14 +4,14 @@
   padding-bottom: 50px;
   box-sizing: border-box;
 }
-.contact-us .lab1 {
+.contact-us .tittle {
   color: #333B46;
   font-family: "open sans";
   font-size: 20px;
   text-align: center;
   margin-bottom: 41px;
 }
-.contact-us .lab2 {
+.contact-us .text {
   color: #81868E;
   font-family: "open sans";
   font-size: 14px;
@@ -22,101 +22,111 @@
   margin-bottom: 60px;
 }
 @media (max-width: 768px) {
-  .contact-us .lab2 {
+  .contact-us .text {
     width: 80%;
   }
 }
 .contact-us .content {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+}
+@media (min-width: 1025px) {
+  .contact-us .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-us .content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a1 a2" "a3 a3";
+  }
+  .contact-us .content .e-mail {
+    grid-area: a1;
+  }
+  .contact-us .content .our-office {
+    grid-area: a2;
+  }
+  .contact-us .content .phone {
+    grid-area: a3;
+  }
+}
+@media (max-width: 768px) {
+  .contact-us .content {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 .contact-us .content > * {
-  flex: 1 0 25%;
-  min-width: 288px;
-  max-width: 289px;
-  margin-bottom: 10px;
+  height: 270px;
+  padding: 10px;
+  box-sizing: border-box;
 }
-.contact-us .content .div1 {
-  height: 272px;
-  width: 288px;
-}
-.contact-us .content .div1 .div11 {
+.contact-us .content .e-mail .image {
   height: 50%;
   background-image: url(../images/contus1.jpg);
+  background-size: cover;
 }
-.contact-us .content .div1 .div12 {
+.contact-us .content .e-mail .div12 {
   height: 50%;
-  padding-top: 1px;
+  padding-top: 30px;
   background-color: white;
+  box-sizing: border-box;
 }
-.contact-us .content .div1 .div12 .text1 {
+.contact-us .content .e-mail .div12 .text1 {
   margin-bottom: 25px;
   font-family: "open sans";
   font-size: 20px;
   color: #464646;
-  margin-top: 30px;
   text-align: center;
 }
-.contact-us .content .div1 .div12 .text2 {
+.contact-us .content .e-mail .div12 .text2 {
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";
   text-align: center;
 }
-.contact-us .content .div2 {
-  height: 273px;
-  width: 288px;
-}
-.contact-us .content .div2 .div21 {
+.contact-us .content .our-office .image {
   height: 50%;
   background-image: url(../images/contus2.jpg);
+  background-size: cover;
 }
-.contact-us .content .div2 .div22 {
+.contact-us .content .our-office .div22 {
   height: 50%;
-  padding-top: 1px;
+  padding-top: 30px;
   background-color: white;
+  box-sizing: border-box;
 }
-.contact-us .content .div2 .div22 .text1 {
+.contact-us .content .our-office .div22 .text1 {
   margin-bottom: 25px;
   font-family: "open sans";
   font-size: 20px;
   color: #464646;
-  margin-top: 30px;
   text-align: center;
 }
-.contact-us .content .div2 .div22 .text2 {
+.contact-us .content .our-office .div22 .text2 {
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";
   text-align: center;
 }
-.contact-us .content .div3 {
-  height: 273px;
-  width: 288px;
-}
-.contact-us .content .div3 .div31 {
+.contact-us .content .phone .image {
   height: 50%;
   background-image: url(../images/contus3.jpg);
+  background-size: cover;
 }
-.contact-us .content .div3 .div32 {
+.contact-us .content .phone .div32 {
   height: 50%;
-  padding-top: 1px;
+  padding-top: 30px;
   background-color: white;
+  box-sizing: border-box;
 }
-.contact-us .content .div3 .div32 .text1 {
+.contact-us .content .phone .div32 .text1 {
   margin-bottom: 25px;
   font-family: "open sans";
   font-size: 20px;
   color: #464646;
-  margin-top: 30px;
   text-align: center;
 }
-.contact-us .content .div3 .div32 .text2 {
+.contact-us .content .phone .div32 .text2 {
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";

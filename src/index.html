@@ -7,7 +7,7 @@
 	<title>Bouncy - Code cafe</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/circlefull.css">
+	<link rel="stylesheet" type="text/css" href="css/circlrefull.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.css">
 	<link href="favicon.ico" rel="shortcut icon">
 	<script src="js/circlefull.js"></script>
@@ -32,18 +32,18 @@
 
 
 	<section class="hello">
-		<h2 class="hello__tittle">We Are Code Cafe</h2>
-		<div class="hello__text common-text-white">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</div>
-		<a class="hello__pick" tabindex="10" href="#tib"></a>
+		<h2 class="tittle">We Are Code Cafe</h2>
+		<div class="text common-text-white">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</div>
+		<a class="pick" tabindex="10" href="#tib"></a>
 	</section>
 
 	<section id="tib" class="this-is-boucy">
-		<div class="description this-is-boucy__description">
-			<h2 class="tittle-text description__tittle">THIS IS BOUNCY</h2>
-			<p class="common-text description__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-			<a tabindex="10" href="index.html" class="description__more">Read More</a>
+		<div class="description">
+			<h2 class="tittle tittle-text">THIS IS BOUNCY</h2>
+			<p class="text common-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+			<a tabindex="10" href="index.html" class="more">Read More</a>
 		</div>
-		<img class="this-is-boucy__image" src="images/ipad.png" alt="ipad.png">
+		<img class="image" src="images/ipad.png" alt="ipad.png">
 	</section>
 
 	<section class="details-about-bouncy">
@@ -201,17 +201,22 @@
 	<section class="the-portfolio">
 		<h2 class="lab1">THE PORTFOLIO</h2>
 		<div class="lab2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-		<ul class="menu">
-			<li class="All Works">All Works</li>
-			<li class="Print">Print</li>
-			<li class="Identity">Identity</li>
-			<li class="Branding">Branding</li>
-			<li class="Web">Web</li>
-			<li class="HTML">HTML</li>
-			<li class="Wordpress">Wordpress</li>
-		</ul>
-		<div id = "gr" class="grid">
+		<!-- <div id = "gr" class="grid">
 			<div class="grid-sizer"></div>
+			<div class="grid-item"><img src="images/grid1.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid2.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid3.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid4.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid5.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid6.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid7.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid8.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid9.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid10.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid11.jpg" alt="text"></div>
+			<div class="grid-item"><img src="images/grid12.jpg" alt="text"></div>
+		</div> -->
+		<div class="masonry">
 			<div class="grid-item"><img src="images/grid1.jpg" alt="text"></div>
 			<div class="grid-item"><img src="images/grid2.jpg" alt="text"></div>
 			<div class="grid-item"><img src="images/grid3.jpg" alt="text"></div>
@@ -232,86 +237,77 @@
 	</section>
 
 	<section class="the-team">
-		<h2 class="the">THE TEAM</h2>
-		<div class="lab1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+		<h2 class="tittle tittle-text">THE TEAM</h2>
+		<div class="text common-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide slide1">
-					<div class="photo"></div>
-					<div class="feature">
-						<div class="lable1">Abdullah Noman</div>
-						<div class="lable2">CREATIVE DIRECTOR, CODE CAFE</div>
-						<div class="lable3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-						<div class="feat1">
-							<div class="f1">BRANDING</div>
-							<div class="f2">80%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+					<img class="photo" src="images/man.png" alt="text"></img>
+					<div class="features">
+						<div class="name">Abdulah Niman</div>
+						<div class="position">CREATIVE DIRECTOR, CODE CAFE</div>
+						<div class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+						<div class="branding">
+							<div class="label">BRANDING</div>
+							<div class="percent">80%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
-						<div class="feat2">
-							<div class="f1">WEB DESIGN</div>
-							<div class="f2">65%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+						<div class="web-design">
+							<div class="label">WEB DESIGN</div>
+							<div class="percent">65%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
-						<div class="feat3">
-							<div class="f1">USER INTERFACE</div>
-							<div class="f2">75%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+						<div class="user-interface">
+							<div class="label">USER INTERFACE</div>
+							<div class="percent">75%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
 					</div>
 				</div>
 
 				<div class="swiper-slide slide2">
-					<div class="photo"></div>
-					<div class="feature">
-						<div class="lable1">jack Niman</div>
-						<div class="lable2">CREATIVE DIRECTOR, CODE CAFE</div>
-						<div class="lable3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-						<div class="feat1">
-							<div class="f1">BRANDING</div>
-							<div class="f2">30%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+					<img class="photo" src="images/man.png" alt="text"></img>
+					<div class="features">
+						<div class="name">Jack Keil</div>
+						<div class="position">MANAGER, CODE CAFE</div>
+						<div class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+						<div class="branding">
+							<div class="label">BRANDING</div>
+							<div class="percent">50%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
-						<div class="feat2">
-							<div class="f1">WEB DESIGN</div>
-							<div class="f2">90%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+						<div class="web-design">
+							<div class="label">WEB DESIGN</div>
+							<div class="percent">75%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
-						<div class="feat3">
-							<div class="f1">USER INTERFACE</div>
-							<div class="f2">70%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+						<div class="user-interface">
+							<div class="label">USER INTERFACE</div>
+							<div class="percent">80%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
 					</div>
 				</div>
 				<div class="swiper-slide slide3">
-					<div class="photo"></div>
-					<div class="feature">
-						<div class="lable1">Mike</div>
-						<div class="lable2">CREATIVE DIRECTOR, CODE CAFE</div>
-						<div class="lable3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-						<div class="feat1">
-							<div class="f1">BRANDING</div>
-							<div class="f2">35%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+					<img class="photo" src="images/man.png" alt="text"></img>
+					<div class="features">
+						<div class="name">Nikia Louse</div>
+						<div class="position">PROGRAMMER, CODE CAFE</div>
+						<div class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+						<div class="branding">
+							<div class="label">BRANDING</div>
+							<div class="percent">90%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
-						<div class="feat2">
-							<div class="f1">WEB DESIGN</div>
-							<div class="f2">75%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+						<div class="web-design">
+							<div class="label">WEB DESIGN</div>
+							<div class="percent">65%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
-						<div class="feat3">
-							<div class="f1">USER INTERFACE</div>
-							<div class="f2">48%</div>
-							<div class="f3"></div>
-							<div class="f4"></div>
+						<div class="user-interface">
+							<div class="label">USER INTERFACE</div>
+							<div class="percent">80%</div>
+							<div class="progress"><div class="progress2"></div></div>
 						</div>
 					</div>
 				</div>
@@ -404,29 +400,31 @@
 	</section>
 
 	<section class="our-price">
-		<h2 class="lab1">OUR PRICE</h2>
-		<div class="lab2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-		<div class="up-grid">
-			<div class="grid">
-				<div class="premium">
-					<div class="zag">PREMIUM</div>
-					<div class="content"><div><span>$ 60</span><br>Per Month</div></div>
-				</div>
-				<div class="start">
-					<div class="content">
-						<div>Full Branding<br>
-						Project Management <br>
-						Unlimited Revisions<br>
-						24/7 h Service<br>
-						Free Domain<br>
-						Free Hosting</div>
+		<h2 class="tittle">OUR PRICE</h2>
+		<div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+		<div class="grid">
+			<div class="premium">
+				<div class="tittle">PREMIUM</div>
+				<div class="content">
+					<div>
+						<span>$ 60</span><br>Per Month
 					</div>
-					<div class="zag">Let's start ></div>
 				</div>
-				<div class="exclusive">
-					<div class="zag">EXLUSIVE</div>
-					<div class="content"><div><span>$ 80</span><br>Per Month</div></div>
+			</div>
+			<div class="start">
+				<div class="content">
+					<div>Full Branding<br>
+					Project Management <br>
+					Unlimited Revisions<br>
+					24/7 h Service<br>
+					Free Domain<br>
+					Free Hosting</div>
 				</div>
+				<div class="tittle">Let's start ></div>
+			</div>
+			<div class="exclusive">
+				<div class="tittle">EXLUSIVE</div>
+				<div class="content"><div><span>$ 80</span><br>Per Month</div></div>
 			</div>
 		</div>
 	</section>
@@ -436,18 +434,18 @@
 		<h2 class="lab1">SUBSCRIBE US</h2>
 		<div class="lab2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
 		<form>
-			<input type="text" value="Email Address">
+			<input type="text" placeholder="Email Address">
 			<input type="submit" value="SUBMIT">
 		</form>
 	</section>
 
 
 	<section class="contact-us">
-		<h2 class="lab1">CONTACT US</h2>
-		<div class="lab2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+		<h2 class="tittle">CONTACT US</h2>
+		<div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
 		<div class="content">
-			<div class="div1">
-				<div class="div11">
+			<div class="e-mail">
+				<div class="image">
 
 				</div>
 				<address class="div12">
@@ -457,8 +455,8 @@
 				</address>
 			</div>
 
-			<div class="div2">
-				<div class="div21">
+			<div class="our-office">
+				<div class="image">
 
 				</div>
 				<address class="div22">
@@ -467,8 +465,8 @@
 BANGLADESH</div>
 				</address>
 			</div>
-			<div class="div3">
-				<div class="div31">
+			<div class="phone">
+				<div class="image">
 
 				</div>
 				<address class="div32">

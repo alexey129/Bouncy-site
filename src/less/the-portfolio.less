@@ -25,47 +25,50 @@
 		}
 	}
 
-	.menu{
-		width: 70%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 70px;
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-		flex-wrap: wrap;
-		font-size: 16px;
-		font-family: "open sans";
+	
 
-		@media(max-width: 500px){
-			width: 80%;
-			justify-content: space-between;
-
-			*{
-				flex-basis: 50px;
-			}
-			&>*:last-child{
-				flex-basis: 100%;
-				text-align: center;
-			}
-		}
-
-		*{
-			flex-basis: 100px;
-			margin-bottom: 10px;
-			text-align: center;
-		}
-	}
-
-	.grid{
-		width: 90%;
+	/*.grid{
+		width: 95%;
 		margin: 0 auto;
+		border: solid 1px blue;
 
 		.grid-item {
 			margin-bottom: 10px;
+			border: solid 1px red;
+			padding: 15px;
+		}
+	}*/
+
+	.masonry{
+		@media (max-width: 480px) {
+			column-count: 1;
+		}
+		@media (min-width: 481px) and (max-width: 620px) {
+			column-count: 2;
+		}
+		@media (min-width: 621px) and (max-width: 1023px) {
+			column-count: 3;
+		}
+		@media (min-width: 1024px) {
+			column-count: 4;
+		}
+		column-gap: 15px;
+		width: 90%;
+		margin: 0 auto;
+
+		.grid-item{
+			margin: 8px 0;
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+
 		}
 	}
-
 	.footer{
 		max-width: 1111px;
 		width: 90%;
@@ -101,22 +104,26 @@
 			text-decoration: none;
 
 			&:hover{
-                    background-color: white;
-                    color: #81868E;
-                    transition-property: background-color, color;
-                    transition-duration: 0.5s;
-               }
+				background-color: white;
+				color: #81868E;
+				transition-property: background-color, color;
+				transition-duration: 0.5s;
+			}
 
-               &:focus-visible{
-                    background-color: #B3DAE0;
-                    transition-duration: 0s;
-               }
+			&:focus-visible{
+				background-color: #B3DAE0;
+				transition-duration: 0s;
+			}
 
-               &:active{
-                    padding: 5px;
-                    transition-property: padding;
-                    transition-duration: 0.5s;
-               }
+			&:active{
+				padding: 5px;
+				transition-property: padding;
+				transition-duration: 0.5s;
+			}
+		}
+
+		@media(max-width: 768px){
+			width: 100%;
 		}
 	}
 }

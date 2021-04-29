@@ -2,27 +2,29 @@
 	padding-top: 90px;
 	box-sizing: border-box;
 
-	.the{
+	.tittle{
 		text-align: center;
 		margin-bottom: 40px;
-		font-family: "myriad pro regular";
-		font-size: 20px;
 	}
 
-	.lab1{
+	.text{
 		text-align: center;
 		margin-bottom: 60px;
-		color: #81868E;
-		font-family: "open sans";
-		font-size: 14px;
+
+		@media(max-width: 768px){
+			margin-bottom: 30px;
+		}
 	}
 
 	.swiper-container{
 		width: 70%;
-		margin-right: auto;
-		margin-left: auto;
+		margin: 0 auto;
 
 		@media(max-width: 1000px){
+			width: 90%;
+		}
+
+		@media(max-width: 500px){
 			width: 90%;
 		}
 
@@ -30,12 +32,12 @@
 
 			.swiper-slide{
 
-				@media(max-width: 750px){
+				@media(max-width: 768px){
 
 					.photo{
 						display: none;
 					}
-					.feature{
+					.features{
 						margin: 0px auto;
 					}
 				}
@@ -48,29 +50,28 @@
 				
 
 				.photo{
-					background-image: url(../images/man.png);
-					width: 285px;
-					height: 364px;
+					max-width: 100%;
+					height: auto;
 				}
 
 
 
-				.feature{
+				.features{
 					text-align: right;
 					margin-top: 28px;
 					height: 308px;
 					padding-right: 10px;
 					
-					.lable1{
-						margin-bottom: 15px;
+					.name{
+						margin-bottom: 10px;
 						color: #464646;
 						font-size: 20px;
 						font-family: "open sans";
 						text-align: right;
 					}
 
-					.lable2{
-						margin-bottom: 32px;
+					.position{
+						margin-bottom: 15px;
 						color: #81868E;
 						font-size: 14px;
 						font-family: "myriad pro regular";
@@ -78,8 +79,8 @@
 						font-style: italic;
 					}    
 
-					.lable3{
-						margin-bottom: 48px;
+					.description{
+						margin-bottom: 20px;
 						color: #81868E;
 						font-size: 14px;
 						font-family: "open sans";
@@ -87,141 +88,163 @@
 						margin-bottom: 48px;
 					}
 
-					.feat1{
+					.branding{
 						position: relative;
 						width: 60%;
-						height: 24px;
-						margin-bottom: 36px;
+						height: 25px;
+						margin-bottom: 35px;
 						margin-left: auto;
   						margin-right: 0;
 
-						.f1{
-							display: inline;
+						.label{
 							float: left;
 							color: #81868E;
 							font-size: 16px;
 							font-family: "open sans";
 						}
 
-						.f2{
-							position: absolute;
-							right: 1px;
+						.percent{
+							float: right;
 							color: #81868E;
 							font-size: 16px;
 							font-family: "open sans";
 						}
 
-						.f3{
+						.progress{
 							position: absolute;
-							width: 80%;
-							height: 5px;
-							display: inline;
-							float: left;
-							background-color: #19BD9A;
-							left: 0px;
-							bottom: 3px;
-						}    
-
-						.f4{
-							width: 20%;
+							width: 100%;
 							height: 5px;
 							background-color: #E1E4E9;
-							position: absolute;
-							right: 0px;
-							bottom: 3px;
+							bottom: 0px;    
+
+							.progress2{
+								//width: 80%;
+								height: 100%;
+								background-color: #19BD9A;
+							}
 						}
 					}    
 
-					.feat2{
+					.web-design{
 						position: relative;
 						width: 60%;
-						height: 24px;
-						margin-bottom: 36px;
-						margin-left: 37px;  
+						height: 25px;
+						margin-bottom: 35px;
 						margin-left: auto;
   						margin-right: 0;
 
-						.f1{
-							display: inline;
+						.label{
 							float: left;
 							color: #81868E;
 							font-size: 16px;
 							font-family: "open sans";
-						}    
+						}
 
-						.f2{
-							position: absolute;
-							right: 1px;
+						.percent{
+							float: right;
 							color: #81868E;
 							font-size: 16px;
 							font-family: "open sans";
-						}    
+						}
 
-						.f3{
+						.progress{
 							position: absolute;
-							width: 80%;
-							height: 5px;
-							display: inline;
-							float: left;
-							background-color: #19BD9A;
-							left: 0px;
-							bottom: 3px;
-						}    
-
-						.f4{
-							width: 20%;
+							width: 100%;
 							height: 5px;
 							background-color: #E1E4E9;
-							position: absolute;
-							right: 0px;
-							bottom: 3px;
+							bottom: 0px;    
+
+							.progress2{
+								//width: 65%;
+								height: 100%;
+								background-color: #19BD9A;
+							}
 						}
 					}    
 
-					.feat3{
+					.user-interface{
 						position: relative;
 						width: 60%;
-						height: 24px;
-						margin-left: 37px;  
+						height: 25px;
+						margin-bottom: 35px;
 						margin-left: auto;
   						margin-right: 0;
 
-						.f1{
-							display: inline;
+						.label{
 							float: left;
 							color: #81868E;
 							font-size: 16px;
 							font-family: "open sans";
-						}    
-
-						.f2{
-							position: absolute;
-							right: 1px;
-							color: #81868E;
-							font-size: 16px;
-							font-family: "open sans";
-						}    
-
-						.f3{
-							position: absolute;
-							width: 80%;
-							height: 5px;
-							display: inline;
-							float: left;
-							background-color: #19BD9A;
-							left: 0px;
-							bottom: 3px;
 						}
-						
-						.f4{
-							width: 20%;
+
+						.percent{
+							float: right;
+							color: #81868E;
+							font-size: 16px;
+							font-family: "open sans";
+						}
+
+						.progress{
+							position: absolute;
+							width: 100%;
 							height: 5px;
 							background-color: #E1E4E9;
-							position: absolute;
-							right: 0px;
-							bottom: 3px;
+							bottom: 0px;    
+
+							.progress2{
+								//width: 75%;
+								height: 100%;
+								background-color: #19BD9A;
+							}
 						}
 					}
+					.feat1, .feat2, .feat3{
+						@media(max-width: 768px){
+							width: 100%;
+						}
+					}
+				}
+			}
+
+			.slide1{
+				.branding .progress2{
+					width: 80%;
+				}
+
+				.web-design .progress2{
+					width: 65%;
+				}
+
+				.user-interface .progress2{
+					width: 75%;
+				}
+			}
+
+			.slide2{
+				.branding .progress2{
+					width: 50%;
+				}
+
+				.web-design .progress2{
+					width: 75%;
+				}
+
+				.user-interface .progress2{
+					width: 80%;
+				}
+			}
+
+			.slide3{
+				.branding .progress2{
+					width: 90%;
+				}
+
+				.web-design .progress2{
+					width: 65%;
+				}
+
+				.user-interface .progress2{
+					width: 80%;
 				}
 			}
 		}

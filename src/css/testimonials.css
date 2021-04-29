@@ -53,6 +53,7 @@
   font-size: 16px;
   font-family: "open sans";
   color: #81868E;
+  text-align: justify;
 }
 .testimonials .comments .swiper-container .swiper-wrapper .slide1 .text .text2 {
   margin-bottom: 12px;
@@ -84,6 +85,7 @@
   font-size: 16px;
   font-family: "open sans";
   color: #81868E;
+  text-align: justify;
 }
 .testimonials .comments .swiper-container .swiper-wrapper .slide2 .text .text2 {
   margin-bottom: 12px;
@@ -115,6 +117,7 @@
   font-size: 16px;
   font-family: "open sans";
   color: #81868E;
+  text-align: justify;
 }
 .testimonials .comments .swiper-container .swiper-wrapper .slide3 .text .text2 {
   margin-bottom: 12px;

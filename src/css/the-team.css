@@ -2,34 +2,38 @@
   padding-top: 90px;
   box-sizing: border-box;
 }
-.the-team .the {
+.the-team .tittle {
   text-align: center;
   margin-bottom: 40px;
-  font-family: "myriad pro regular";
-  font-size: 20px;
 }
-.the-team .lab1 {
+.the-team .text {
   text-align: center;
   margin-bottom: 60px;
-  color: #81868E;
-  font-family: "open sans";
-  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .the-team .text {
+    margin-bottom: 30px;
+  }
 }
 .the-team .swiper-container {
   width: 70%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 @media (max-width: 1000px) {
   .the-team .swiper-container {
     width: 90%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 500px) {
+  .the-team .swiper-container {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
   .the-team .swiper-container .swiper-wrapper .swiper-slide .photo {
     display: none;
   }
-  .the-team .swiper-container .swiper-wrapper .swiper-slide .feature {
+  .the-team .swiper-container .swiper-wrapper .swiper-slide .features {
     margin: 0px auto;
   }
 }
@@ -39,158 +43,164 @@
   justify-content: space-between;
 }
 .the-team .swiper-container .swiper-wrapper > * .photo {
-  background-image: url(../images/man.png);
-  width: 285px;
-  height: 364px;
+  max-width: 100%;
+  height: auto;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature {
+.the-team .swiper-container .swiper-wrapper > * .features {
   text-align: right;
   margin-top: 28px;
   height: 308px;
   padding-right: 10px;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .lable1 {
-  margin-bottom: 15px;
+.the-team .swiper-container .swiper-wrapper > * .features .name {
+  margin-bottom: 10px;
   color: #464646;
   font-size: 20px;
   font-family: "open sans";
   text-align: right;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .lable2 {
-  margin-bottom: 32px;
+.the-team .swiper-container .swiper-wrapper > * .features .position {
+  margin-bottom: 15px;
   color: #81868E;
   font-size: 14px;
   font-family: "myriad pro regular";
   text-align: right;
   font-style: italic;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .lable3 {
+.the-team .swiper-container .swiper-wrapper > * .features .description {
+  margin-bottom: 20px;
   color: #81868E;
   font-size: 14px;
   font-family: "open sans";
   text-align: right;
   margin-bottom: 48px;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat1 {
+.the-team .swiper-container .swiper-wrapper > * .features .branding {
   position: relative;
   width: 60%;
-  height: 24px;
-  margin-bottom: 36px;
+  height: 25px;
+  margin-bottom: 35px;
   margin-left: auto;
   margin-right: 0;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat1 .f1 {
-  display: inline;
+.the-team .swiper-container .swiper-wrapper > * .features .branding .label {
   float: left;
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat1 .f2 {
-  position: absolute;
-  right: 1px;
+.the-team .swiper-container .swiper-wrapper > * .features .branding .percent {
+  float: right;
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat1 .f3 {
+.the-team .swiper-container .swiper-wrapper > * .features .branding .progress {
   position: absolute;
-  width: 80%;
-  height: 5px;
-  display: inline;
-  float: left;
-  background-color: #19BD9A;
-  left: 0px;
-  bottom: 3px;
-}
-.the-team .swiper-container .swiper-wrapper > * .feature .feat1 .f4 {
-  width: 20%;
+  width: 100%;
   height: 5px;
   background-color: #E1E4E9;
-  position: absolute;
-  right: 0px;
-  bottom: 3px;
+  bottom: 0px;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat2 {
+.the-team .swiper-container .swiper-wrapper > * .features .branding .progress .progress2 {
+  height: 100%;
+  background-color: #19BD9A;
+}
+.the-team .swiper-container .swiper-wrapper > * .features .web-design {
   position: relative;
   width: 60%;
-  height: 24px;
-  margin-bottom: 36px;
-  margin-left: 37px;
+  height: 25px;
+  margin-bottom: 35px;
   margin-left: auto;
   margin-right: 0;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat2 .f1 {
-  display: inline;
+.the-team .swiper-container .swiper-wrapper > * .features .web-design .label {
   float: left;
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat2 .f2 {
-  position: absolute;
-  right: 1px;
+.the-team .swiper-container .swiper-wrapper > * .features .web-design .percent {
+  float: right;
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat2 .f3 {
+.the-team .swiper-container .swiper-wrapper > * .features .web-design .progress {
   position: absolute;
-  width: 80%;
-  height: 5px;
-  display: inline;
-  float: left;
-  background-color: #19BD9A;
-  left: 0px;
-  bottom: 3px;
-}
-.the-team .swiper-container .swiper-wrapper > * .feature .feat2 .f4 {
-  width: 20%;
+  width: 100%;
   height: 5px;
   background-color: #E1E4E9;
-  position: absolute;
-  right: 0px;
-  bottom: 3px;
+  bottom: 0px;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat3 {
+.the-team .swiper-container .swiper-wrapper > * .features .web-design .progress .progress2 {
+  height: 100%;
+  background-color: #19BD9A;
+}
+.the-team .swiper-container .swiper-wrapper > * .features .user-interface {
   position: relative;
   width: 60%;
-  height: 24px;
-  margin-left: 37px;
+  height: 25px;
+  margin-bottom: 35px;
   margin-left: auto;
   margin-right: 0;
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat3 .f1 {
-  display: inline;
+.the-team .swiper-container .swiper-wrapper > * .features .user-interface .label {
   float: left;
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat3 .f2 {
-  position: absolute;
-  right: 1px;
+.the-team .swiper-container .swiper-wrapper > * .features .user-interface .percent {
+  float: right;
   color: #81868E;
   font-size: 16px;
   font-family: "open sans";
 }
-.the-team .swiper-container .swiper-wrapper > * .feature .feat3 .f3 {
+.the-team .swiper-container .swiper-wrapper > * .features .user-interface .progress {
   position: absolute;
-  width: 80%;
-  height: 5px;
-  display: inline;
-  float: left;
-  background-color: #19BD9A;
-  left: 0px;
-  bottom: 3px;
-}
-.the-team .swiper-container .swiper-wrapper > * .feature .feat3 .f4 {
-  width: 20%;
+  width: 100%;
   height: 5px;
   background-color: #E1E4E9;
-  position: absolute;
-  right: 0px;
-  bottom: 3px;
+  bottom: 0px;
+}
+.the-team .swiper-container .swiper-wrapper > * .features .user-interface .progress .progress2 {
+  height: 100%;
+  background-color: #19BD9A;
+}
+@media (max-width: 768px) {
+  .the-team .swiper-container .swiper-wrapper > * .features .feat1,
+  .the-team .swiper-container .swiper-wrapper > * .features .feat2,
+  .the-team .swiper-container .swiper-wrapper > * .features .feat3 {
+    width: 100%;
+  }
+}
+.the-team .swiper-container .swiper-wrapper .slide1 .branding .progress2 {
+  width: 80%;
+}
+.the-team .swiper-container .swiper-wrapper .slide1 .web-design .progress2 {
+  width: 65%;
+}
+.the-team .swiper-container .swiper-wrapper .slide1 .user-interface .progress2 {
+  width: 75%;
+}
+.the-team .swiper-container .swiper-wrapper .slide2 .branding .progress2 {
+  width: 50%;
+}
+.the-team .swiper-container .swiper-wrapper .slide2 .web-design .progress2 {
+  width: 75%;
+}
+.the-team .swiper-container .swiper-wrapper .slide2 .user-interface .progress2 {
+  width: 80%;
+}
+.the-team .swiper-container .swiper-wrapper .slide3 .branding .progress2 {
+  width: 90%;
+}
+.the-team .swiper-container .swiper-wrapper .slide3 .web-design .progress2 {
+  width: 65%;
+}
+.the-team .swiper-container .swiper-wrapper .slide3 .user-interface .progress2 {
+  width: 80%;
 }
 .the-team .buttons {
   width: 55px;

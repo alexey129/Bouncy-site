@@ -4,30 +4,31 @@
   display: flex;
   justify-content: space-between;
 }
-.this-is-boucy__description {
+.this-is-boucy .description {
   max-width: 465px;
   margin-right: 50px;
 }
-.this-is-boucy__image {
+.this-is-boucy .image {
   max-width: 100%;
   height: auto;
 }
 @media (max-width: 768px) {
-  .this-is-boucy__image {
+  .this-is-boucy .image {
     display: none;
   }
 }
 .description {
   padding-top: 25px;
 }
-.description__tittle {
+.description .tittle {
   margin-bottom: 35px;
 }
-.description__text {
+.description .text {
   line-height: 2;
   margin-bottom: 45px;
+  text-align: justify;
 }
-.description__more {
+.description .more {
   display: block;
   width: 140px;
   height: 35px;
@@ -40,17 +41,17 @@
   color: #333B46;
   text-decoration: none;
 }
-.description__more:hover {
+.description .more:hover {
   background-color: black;
   color: white;
   transition-property: background-color, color;
   transition-duration: 0.5s;
 }
-.description__more:focus-visible {
+.description .more:focus-visible {
   background-color: #B3DAE0;
   transition-duration: 0s;
 }
-.description__more:active {
+.description .more:active {
   background-color: gray;
   transition-property: background-color;
   transition-duration: 0s;

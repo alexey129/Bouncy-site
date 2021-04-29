@@ -51,6 +51,7 @@
 .featured-project footer {
   height: 116px;
   background-image: url(../images/image-footer.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -99,6 +100,10 @@
   .featured-project footer {
     height: 166px;
     flex-direction: column;
+  }
+  .featured-project footer div {
+    width: 90%;
+    text-align: center;
   }
   .featured-project footer .button {
     margin-right: 0px;

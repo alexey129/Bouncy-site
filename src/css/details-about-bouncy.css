@@ -73,9 +73,11 @@
   color: #81868E;
   font-size: 20px;
   font-family: "open sans";
+  text-align: justify;
 }
 .details-about-bouncy .swiper-slide .content2 .con2 {
   color: #81868E;
   font-size: 14px;
   font-family: "open sans";
+  text-align: justify;
 }

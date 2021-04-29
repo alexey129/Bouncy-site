@@ -32,6 +32,11 @@ window.addEventListener("scroll", function() {
 	}
 });
 
+//скрытие кнопки "пролистать вниз"
+if(document.documentElement.clientHeight < 500){
+	let elementpick = document.querySelector(".hello .pick");
+	elementpick.style.display = "none";
+}
 //карусель our-services
 
 let swiperOurServices = new Swiper('.our-services .slider .swiper-container', {
