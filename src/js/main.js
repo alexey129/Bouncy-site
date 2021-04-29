@@ -39,28 +39,55 @@ if(document.documentElement.clientHeight < 500){
 }
 //карусель our-services
 
-let swiperOurServices = new Swiper('.our-services .slider .swiper-container', {
-	// Optional parameters
-	direction: 'vertical',
-	loop: true,
-	autoHeight: true,
-	breakpoints: {
-	   786: {
-		  height: 300
-	   },
-	   440: {
-		  height: 320
-	   },
-	   0: {
-		  height: 350
-	   },
-	},
-});
-
 var buttonOurServices1 = document.querySelector(".our-services .slider .buttons .button1");
 var buttonOurServices2 = document.querySelector(".our-services .slider .buttons .button2");
 var buttonOurServices3 = document.querySelector(".our-services .slider .buttons .button3");
 var buttonOurServices4 = document.querySelector(".our-services .slider .buttons .button4");
+
+let swiperOurServices = new Swiper('.our-services .slider .swiper-container', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+	autoHeight: true,
+	breakpoints: {
+		786: {
+			height: 300
+		},
+		440: {
+			height: 320
+		},
+		0: {
+			height: 350
+		},
+	},
+});
+
+swiperOurServices.on("slideChange",function(){
+	if(swiperOurServices.activeIndex == 1 || swiperOurServices.activeIndex == 5){
+		buttonOurServices1.style.backgroundColor = "#19BD9A";
+		buttonOurServices2.style.backgroundColor = "#81868E";
+		buttonOurServices3.style.backgroundColor = "#81868E";
+		buttonOurServices4.style.backgroundColor = "#81868E";
+	};
+	if(swiperOurServices.activeIndex == 2){
+		buttonOurServices1.style.backgroundColor = "#81868E";
+		buttonOurServices2.style.backgroundColor = "#19BD9A";
+		buttonOurServices3.style.backgroundColor = "#81868E";
+		buttonOurServices4.style.backgroundColor = "#81868E";
+	};
+	if(swiperOurServices.activeIndex == 3){
+		buttonOurServices1.style.backgroundColor = "#81868E";
+		buttonOurServices2.style.backgroundColor = "#81868E";
+		buttonOurServices3.style.backgroundColor = "#19BD9A";
+		buttonOurServices4.style.backgroundColor = "#81868E";
+	};
+	if(swiperOurServices.activeIndex == 4 || swiperOurServices.activeIndex == 0){
+		buttonOurServices1.style.backgroundColor = "#81868E";
+		buttonOurServices2.style.backgroundColor = "#81868E";
+		buttonOurServices3.style.backgroundColor = "#81868E";
+		buttonOurServices4.style.backgroundColor = "#19BD9A";
+	};
+});
 
 buttonOurServices1.onclick = function(event) {
 	swiperOurServices.slideTo(1, 500);
@@ -94,7 +121,7 @@ buttonOurServices4.onclick = function(event) {
 	//карусель details-about-bouncy
 let swiperDetAbBoun = new Swiper('.details-about-bouncy .swiper-container', {
 	// Optional parameters
-	direction: 'vertical',
+	direction: 'horizontal',
 	loop: true,
 	autoHeight: true,
 	breakpoints: {
@@ -113,6 +140,24 @@ let swiperDetAbBoun = new Swiper('.details-about-bouncy .swiper-container', {
 var buttonDetAbBoun1 = document.querySelector(".details-about-bouncy .details-about-bouncy__buttons .button1");
 var buttonDetAbBoun2 = document.querySelector(".details-about-bouncy .details-about-bouncy__buttons .button2");
 var buttonDetAbBoun3 = document.querySelector(".details-about-bouncy .details-about-bouncy__buttons .button3");
+
+swiperDetAbBoun.on("slideChange",function(){
+	if(swiperDetAbBoun.activeIndex == 1 || swiperDetAbBoun.activeIndex == 4){
+		buttonDetAbBoun1.style.backgroundColor = "#19BD9A";
+		buttonDetAbBoun2.style.backgroundColor = "#81868E";
+		buttonDetAbBoun3.style.backgroundColor = "#81868E";
+	};
+	if(swiperDetAbBoun.activeIndex == 2){
+		buttonDetAbBoun1.style.backgroundColor = "#81868E";
+		buttonDetAbBoun2.style.backgroundColor = "#19BD9A";
+		buttonDetAbBoun3.style.backgroundColor = "#81868E";
+	};
+	if(swiperDetAbBoun.activeIndex == 3 || swiperDetAbBoun.activeIndex == 0){
+		buttonDetAbBoun1.style.backgroundColor = "#81868E";
+		buttonDetAbBoun2.style.backgroundColor = "#81868E";
+		buttonDetAbBoun3.style.backgroundColor = "#19BD9A";
+	};
+});
 
 buttonDetAbBoun1.onclick = function(event) {
 	swiperDetAbBoun.slideTo(1, 500);
@@ -166,6 +211,24 @@ var buttonTheTeam1 = document.querySelector(".the-team .buttons .button1");
 var buttonTheTeam2 = document.querySelector(".the-team .buttons .button2");
 var buttonTheTeam3 = document.querySelector(".the-team .buttons .button3");
 
+swiperTheTeam.on("slideChange",function(){
+	if(swiperTheTeam.activeIndex == 1 || swiperTheTeam.activeIndex == 4){
+		buttonTheTeam1.style.backgroundColor = "#19BD9A";
+		buttonTheTeam2.style.backgroundColor = "white";
+		buttonTheTeam3.style.backgroundColor = "white";
+	};
+	if(swiperTheTeam.activeIndex == 2){
+		buttonTheTeam1.style.backgroundColor = "white";
+		buttonTheTeam2.style.backgroundColor = "#19BD9A";
+		buttonTheTeam3.style.backgroundColor = "white";
+	};
+	if(swiperTheTeam.activeIndex == 3 || swiperTheTeam.activeIndex == 0){
+		buttonTheTeam1.style.backgroundColor = "white";
+		buttonTheTeam2.style.backgroundColor = "white";
+		buttonTheTeam3.style.backgroundColor = "#19BD9A";
+	};
+});
+
 buttonTheTeam1.onclick = function(event) {
 	swiperTheTeam.slideTo(1, 500);
 	buttonTheTeam1.style.backgroundColor = "#19BD9A";
@@ -189,7 +252,7 @@ buttonTheTeam3.onclick = function(event) {
 
 let swiperTestimonials = new Swiper('.testimonials .comments .swiper-container', {
 	// Optional parameters
-	direction: 'vertical',
+	direction: 'horizontal',
 	loop: true,
 	autoHeight: true,
 	breakpoints: {
@@ -205,6 +268,24 @@ let swiperTestimonials = new Swiper('.testimonials .comments .swiper-container',
 var buttonTestimonials1 = document.querySelector(".testimonials .comments .buttons .button1");
 var buttonTestimonials2 = document.querySelector(".testimonials .comments .buttons .button2");
 var buttonTestimonials3 = document.querySelector(".testimonials .comments .buttons .button3");
+
+swiperTestimonials.on("slideChange",function(){
+	if(swiperTestimonials.activeIndex == 1 || swiperTestimonials.activeIndex == 4){
+		buttonTestimonials1.style.backgroundColor = "#19BD9A";
+		buttonTestimonials2.style.backgroundColor = "white";
+		buttonTestimonials3.style.backgroundColor = "white";
+	};
+	if(swiperTestimonials.activeIndex == 2){
+		buttonTestimonials1.style.backgroundColor = "white";
+		buttonTestimonials2.style.backgroundColor = "#19BD9A";
+		buttonTestimonials3.style.backgroundColor = "white";
+	};
+	if(swiperTestimonials.activeIndex == 3 || swiperTestimonials.activeIndex == 0){
+		buttonTestimonials1.style.backgroundColor = "white";
+		buttonTestimonials2.style.backgroundColor = "white";
+		buttonTestimonials3.style.backgroundColor = "#19BD9A";
+	};
+});
 
 buttonTestimonials1.onclick = function(event) {
 	swiperTestimonials.slideTo(1, 500);
@@ -230,7 +311,7 @@ buttonTestimonials3.onclick = function(event) {
 
 let swiperLatestNews = new Swiper('.latest-news .swiper-container', {
 	// Optional parameters
-	direction: 'vertical',
+	direction: 'horizontal',
 	loop: true,
 	autoHeight: true,
 	breakpoints: {
@@ -246,6 +327,24 @@ let swiperLatestNews = new Swiper('.latest-news .swiper-container', {
 var buttonLatestNews1 = document.querySelector(".latest-news .buttons .button1");
 var buttonLatestNews2 = document.querySelector(".latest-news .buttons .button2");
 var buttonLatestNews3 = document.querySelector(".latest-news .buttons .button3");
+
+swiperLatestNews.on("slideChange",function(){
+	if(swiperLatestNews.activeIndex == 1 || swiperLatestNews.activeIndex == 4){
+		buttonLatestNews1.style.backgroundColor = "#B2B3B3";
+		buttonLatestNews2.style.backgroundColor = "rgba(0, 0, 0, 0)";
+		buttonLatestNews3.style.backgroundColor = "rgba(0, 0, 0, 0)";
+	};
+	if(swiperLatestNews.activeIndex == 2){
+		buttonLatestNews1.style.backgroundColor = "rgba(0, 0, 0, 0)";
+		buttonLatestNews2.style.backgroundColor = "#B2B3B3";
+		buttonLatestNews3.style.backgroundColor = "rgba(0, 0, 0, 0)";
+	};
+	if(swiperLatestNews.activeIndex == 3 || swiperLatestNews.activeIndex == 0){
+		buttonLatestNews1.style.backgroundColor = "rgba(0, 0, 0, 0)";
+		buttonLatestNews2.style.backgroundColor = "rgba(0, 0, 0, 0)";
+		buttonLatestNews3.style.backgroundColor = "#B2B3B3";
+	};
+});
 
 buttonLatestNews1.onclick = function(event) {
 	swiperLatestNews.slideTo(1, 500);
