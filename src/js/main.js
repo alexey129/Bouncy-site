@@ -1,3 +1,4 @@
+//кнопка меню в header
 function HeadMenuf() {
 	let element = document.querySelector("header > ul");
 	element.classList.toggle("menuOpen");
@@ -24,7 +25,6 @@ if (window.pageYOffset >= 30) {
 
 window.addEventListener("scroll", function() {
 	var element = document.querySelector("header");
-	//var element2 = document.querySelectorAll("header > div");
 	if (window.pageYOffset >= 30) {
 	   element.style.backgroundColor = "#D3D3D3";
 	} else {
@@ -45,7 +45,6 @@ var buttonOurServices3 = document.querySelector(".our-services .slider .buttons 
 var buttonOurServices4 = document.querySelector(".our-services .slider .buttons .button4");
 
 let swiperOurServices = new Swiper('.our-services .slider .swiper-container', {
-	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
 	autoHeight: true,
@@ -91,36 +90,19 @@ swiperOurServices.on("slideChange",function(){
 
 buttonOurServices1.onclick = function(event) {
 	swiperOurServices.slideTo(1, 500);
-	buttonOurServices1.style.backgroundColor = "#19BD9A";
-	buttonOurServices2.style.backgroundColor = "#81868E";
-	buttonOurServices3.style.backgroundColor = "#81868E";
-	buttonOurServices4.style.backgroundColor = "#81868E";
 };
 buttonOurServices2.onclick = function(event) {
 	swiperOurServices.slideTo(2, 500);
-	buttonOurServices1.style.backgroundColor = "#81868E";
-	buttonOurServices2.style.backgroundColor = "#19BD9A";
-	buttonOurServices3.style.backgroundColor = "#81868E";
-	buttonOurServices4.style.backgroundColor = "#81868E";
 };
 buttonOurServices3.onclick = function(event) {
 	swiperOurServices.slideTo(3, 500);
-	buttonOurServices1.style.backgroundColor = "#81868E";
-	buttonOurServices2.style.backgroundColor = "#81868E";
-	buttonOurServices3.style.backgroundColor = "#19BD9A";
-	buttonOurServices4.style.backgroundColor = "#81868E";
 };
 buttonOurServices4.onclick = function(event) {
-	   swiperOurServices.slideTo(4, 500);
-	   buttonOurServices1.style.backgroundColor = "#81868E";
-	   buttonOurServices2.style.backgroundColor = "#81868E";
-	   buttonOurServices3.style.backgroundColor = "#81868E";
-	   buttonOurServices4.style.backgroundColor = "#19BD9A";
-	};
+	swiperOurServices.slideTo(4, 500);
+};
 	//--------------------------------------------------------
 	//карусель details-about-bouncy
 let swiperDetAbBoun = new Swiper('.details-about-bouncy .swiper-container', {
-	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
 	autoHeight: true,
@@ -160,22 +142,13 @@ swiperDetAbBoun.on("slideChange",function(){
 });
 
 buttonDetAbBoun1.onclick = function(event) {
-	swiperDetAbBoun.slideTo(1, 500);
-	buttonDetAbBoun1.style.backgroundColor = "#19BD9A";
-	buttonDetAbBoun2.style.backgroundColor = "#81868E";
-	buttonDetAbBoun3.style.backgroundColor = "#81868E";
+	swiperDetAbBoun.slideTo(1, 500)
 };
 buttonDetAbBoun2.onclick = function(event) {
 	swiperDetAbBoun.slideTo(2, 500);
-	buttonDetAbBoun1.style.backgroundColor = "#81868E";
-	buttonDetAbBoun2.style.backgroundColor = "#19BD9A";
-	buttonDetAbBoun3.style.backgroundColor = "#81868E";
 };
 buttonDetAbBoun3.onclick = function(event) {
 	swiperDetAbBoun.slideTo(3, 500);
-	buttonDetAbBoun1.style.backgroundColor = "#81868E";
-	buttonDetAbBoun2.style.backgroundColor = "#81868E";
-	buttonDetAbBoun3.style.backgroundColor = "#19BD9A";
 };
 
 //---------------------------------------------------------------
@@ -196,15 +169,10 @@ imagesLoaded(container, function() {
 //карусель the-team
 
 let swiperTheTeam = new Swiper('.the-team .swiper-container', {
-	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
 	autoHeight: true,
 	height: 400,
-	/*breakpoints:{
-	640:{height: 400},
-	0:{height: 300},
-	},*/
 });
 
 var buttonTheTeam1 = document.querySelector(".the-team .buttons .button1");
@@ -231,27 +199,17 @@ swiperTheTeam.on("slideChange",function(){
 
 buttonTheTeam1.onclick = function(event) {
 	swiperTheTeam.slideTo(1, 500);
-	buttonTheTeam1.style.backgroundColor = "#19BD9A";
-	buttonTheTeam2.style.backgroundColor = "white";
-	buttonTheTeam3.style.backgroundColor = "white";
 };
 buttonTheTeam2.onclick = function(event) {
 	swiperTheTeam.slideTo(2, 500);
-	buttonTheTeam1.style.backgroundColor = "white";
-	buttonTheTeam2.style.backgroundColor = "#19BD9A";
-	buttonTheTeam3.style.backgroundColor = "white";
 };
 buttonTheTeam3.onclick = function(event) {
 	swiperTheTeam.slideTo(3, 500);
-	buttonTheTeam1.style.backgroundColor = "white";
-	buttonTheTeam2.style.backgroundColor = "white";
-	buttonTheTeam3.style.backgroundColor = "#19BD9A";
 };
 
 //карусель testimonials
 
 let swiperTestimonials = new Swiper('.testimonials .comments .swiper-container', {
-	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
 	autoHeight: true,
@@ -289,21 +247,12 @@ swiperTestimonials.on("slideChange",function(){
 
 buttonTestimonials1.onclick = function(event) {
 	swiperTestimonials.slideTo(1, 500);
-	buttonTestimonials1.style.backgroundColor = "#19BD9A";
-	buttonTestimonials2.style.backgroundColor = "white";
-	buttonTestimonials3.style.backgroundColor = "white";
 };
 buttonTestimonials2.onclick = function(event) {
 	swiperTestimonials.slideTo(2, 500);
-	buttonTestimonials1.style.backgroundColor = "white";
-	buttonTestimonials2.style.backgroundColor = "#19BD9A";
-	buttonTestimonials3.style.backgroundColor = "white";
 };
 buttonTestimonials3.onclick = function(event) {
 	swiperTestimonials.slideTo(3, 500);
-	buttonTestimonials1.style.backgroundColor = "white";
-	buttonTestimonials2.style.backgroundColor = "white";
-	buttonTestimonials3.style.backgroundColor = "#19BD9A";
 };
 
 
@@ -348,21 +297,12 @@ swiperLatestNews.on("slideChange",function(){
 
 buttonLatestNews1.onclick = function(event) {
 	swiperLatestNews.slideTo(1, 500);
-	buttonLatestNews1.style.backgroundColor = "#B2B3B3";
-	buttonLatestNews2.style.backgroundColor = "rgba(0, 0, 0, 0)";
-	buttonLatestNews3.style.backgroundColor = "rgba(0, 0, 0, 0)";
 };
 buttonLatestNews2.onclick = function(event) {
 	swiperLatestNews.slideTo(2, 500);
-	buttonLatestNews1.style.backgroundColor = "rgba(0, 0, 0, 0)";
-	buttonLatestNews2.style.backgroundColor = "#B2B3B3";
-	buttonLatestNews3.style.backgroundColor = "rgba(0, 0, 0, 0)";
 };
 buttonLatestNews3.onclick = function(event) {
 	swiperLatestNews.slideTo(3, 500);
-	buttonLatestNews1.style.backgroundColor = "rgba(0, 0, 0, 0)";
-	buttonLatestNews2.style.backgroundColor = "rgba(0, 0, 0, 0)";
-	buttonLatestNews3.style.backgroundColor = "#B2B3B3";
 };
 
 //find-us-on-the-map
